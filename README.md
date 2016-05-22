@@ -40,15 +40,15 @@ First stage we build a forum that anonymous users can use.
 
 Then we add in the ability to register an account.
 
-Future changes are adding Kr5ddits which are earned by being voted up on comments and posts. Then adding subs like Reddit has by using tags.
+Future changes are adding credits which are earned by being voted up on comments and posts. Then adding subs like Reddit has by using tags.
 
-The exchange will be trading Kr5ddits for Bitcoin and vice versa. That way trolls are punished with negatvie Kr5ddits and have to buy more to get back to normal user status.
+The exchange will be trading credits for Bitcoin and vice versa. That way trolls are punished with negatvie credits and have to buy more to get back to normal user status.
 
-Kr5ddits can be used to push your post to the top of the page. If you collect enough Kr5ddits you can sell them for Bitcoin.
+Credit can be used to push your post to the top of the page. If you collect enough Credits you can sell them for Bitcoin.
 
-Bitcoin and Kr5ddit market is based on the stock market.
+Bitcoin and Credit market is based on the stock market.
 
-The goal of this program is to create a forum that rewards users for good content and punishes trolls for bad content. There is an economic reward for posting good materials and some of the Bitcoins will go towards paying the hosting bill. This is a new startup business model that allows a forum to be free and the community moderates itself for reward of Kr5ddits.
+The goal of this program is to create a forum that rewards users for good content and punishes trolls for bad content. There is an economic reward for posting good materials and some of the Bitcoins will go towards paying the hosting bill. This is a new startup business model that allows a forum to be free and the community moderates itself for reward of Credits.
 
 The FreeK in FreeK666 sounds like Freak or could be short for Frequency or Frequency666 like a radio station or something.
 
