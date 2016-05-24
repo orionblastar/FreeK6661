@@ -8,28 +8,44 @@
 # From: electrum/electrum-env
 # Modified: procrasti@k5-stats.org 13 Aug 2015
 
-if ! [ -e ./env/bin/activate ]; then
-	virtualenv env -p /usr/bin/python3 # --system-site-packages
+if which virtualenv; then
+    if which python3; then
+        if ! [ -e ./env/bin/activate ]; then
+	        virtualenv env -p /usr/bin/python3 --system-site-packages
+        fi
+
+        source ./env/bin/activate
+        python setup.py install
+
+        # WHY DOESN'T THIS WORK FROM setup.py?
+        # pip install django-recaptcha2
+
+        # if ! [ -e k666 ]; then
+        #     django-admin startproject k666 .
+        # fi
+
+        # DONT LET THIS INTO PRODUCTION!!!
+        # ASSUMING DEV ENVIRONMENT... ITS VERY WRONG
+        # IS OKAY IF USING SQLITE3... BUT WE DON'T KNOW!
+        if ! [ -e db.sqlite3 ]; then
+            ## 1. Create the database tables/migrations
+            ./manage.py migrate
+
+            ## 2. Create the Super User or Admin account with a user name and password.
+            $ ./manage.py createsuperuser
+        fi
+
+        export DJANGO_SETTINGS_MODULE="k666.settings"
+
+        ./manage.py runserver "$@"
+
+        # deactivate
+    else
+        echo "You probably have to install python3"
+        echo "sudo apt-get install python3?"
+    fi
+else
+    echo "You probably have to install virtualenv."
+    echo "sudo apt-get install python-virtualenv?"
 fi
 
-source ./env/bin/activate
-python setup.py install
-
-if ! [ -e k666 ]; then
-    django-admin startproject k666 .
-fi
-
-# DONT LET THIS INTO PRODUCTION!!!
-# ASSUMING DEV ENVIRONMENT... ITS VERY WRONG
-# IS OKAY IF USING SQLITE3... BUT WE DON'T KNOW!
-if ! [ -e db.sqlite3 ]; then
-    ## 3. Create the database tables/migrations
-    ./manage.py migrate
-
-    ## 4. Create the Super User or Admin account with a user name and password.
-    $ ./manage.py createsuperuser
-fi
-
-./manage.py runserver "$@"
-
-# deactivate
