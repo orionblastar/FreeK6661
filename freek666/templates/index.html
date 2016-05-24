@@ -1,0 +1,8 @@
+Hello
+{% with request.user as user %}
+{% if user.is_authenticated %}
+{{ user.username }}
+{% else %}
+Anonymous
+{% endif %}
+{% endwith %}
