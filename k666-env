@@ -9,9 +9,9 @@
 # Modified: procrasti@k5-stats.org 13 Aug 2015
 
 if which virtualenv; then
-    if which python3; then
+    if which python; then
         if ! [ -e ./env/bin/activate ]; then
-	        virtualenv env -p /usr/bin/python3 --system-site-packages
+	        virtualenv env
         fi
 
         source ./env/bin/activate
@@ -32,7 +32,7 @@ if which virtualenv; then
             ./manage.py migrate
 
             ## 2. Create the Super User or Admin account with a user name and password.
-            $ ./manage.py createsuperuser
+            ./manage.py createsuperuser
         fi
 
         export DJANGO_SETTINGS_MODULE="k666.settings"
@@ -41,8 +41,8 @@ if which virtualenv; then
 
         # deactivate
     else
-        echo "You probably have to install python3"
-        echo "sudo apt-get install python3?"
+        echo "You probably have to install python"
+        echo "sudo apt-get install python?"
     fi
 else
     echo "You probably have to install virtualenv."
