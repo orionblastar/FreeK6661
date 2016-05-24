@@ -1,4 +1,4 @@
-# K666
+# K666: Free Speech As In Open Source
 
 procrasti@k5-stats.org
 
@@ -7,30 +7,23 @@ orionblastar@gmail.com
 
 If you want to help or join contact Procrasti or Orion first.
 
-Instructions
+# Instructions
 
-After cloning into your directory run
+## 1. Clone Source Repository
+$ git clone https://github.org/orionblastar/K666
+$ cd K666
 
-## 1. Create the environment
+## 2. Create the environment
 $ . ./k666-env
 
-This starts the server, but we still have a couple of things to do before the server is ready.
+This starts the server, it should start up ready.
 
-## 2. Press control-C to exit
+## 3. Visit the site.
+Go to http://localhost:8000/
 
-## 3. Create the database tables/migrations
-$ ./manage.py migrate
+## 4. Hooray!
 
-## 4. Create the Super User or Admin account with a user name and password.
-$ ./manage.py createsuperuser
-
-## 5. Restart the server.
-$ . ./k666-env
-
-## 6. Visit the site.
-Go to http://localhost:8000/static/index.html ... see an index page!
-
-## 7. Hooray!
+We have begun.
 
 # FreeK666 
 
