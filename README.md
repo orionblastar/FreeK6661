@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # K666: Free Speech As In Open Source
+=======
+# K666: Free Speech as in Open Source.
+>>>>>>> origin/master
 
 procrasti@k5-stats.org
 
@@ -25,8 +29,9 @@ Go to http://localhost:8000/
 
 We have begun.
 
-# FreeK666 
+# K666 
 
+<<<<<<< HEAD
 FreeK666 is an attempt at making a free and open source version of Kr5ddit/K666
 
 First stage we build a forum that anonymous users can use.
@@ -46,5 +51,8 @@ The goal of this program is to create a forum that rewards users for good conten
 The FreeK in FreeK666 sounds like Freak or could be short for Frequency or Frequency666 like a radio station or something.
 
 FreeK666 also stands in free speech like in money, it allows people to exercise their free speech and up or down votes from the community determine what gets hidden and what gets shown and what makes it to the front page. So if the community is trolls, it will be troll conetent, if the community are more professional it will be a more professional site. Some of the current alpha testers are from Kuro5hin that had turned into a troll haven and eventually shut down, and from Reddit in which we write from scratch a discussion system which is where the name Kr5ddit comes from. Since SJWs took over Reddit and other sites, people want an alternative that they can run. But this forum is not based on Reddit but one of the goals is for it to replace Reddit and other discussion sites. Free Speech like in money that there are rewards of Kr5ddits to be sold for Bitcoins so the right kind of speech gets economically rewarded. There is also freedom and power given to the community to decide what is shown and what is hidden, instead of moderators and admins deciding what is shown and what is banned like in the Ellen Pao Reddit scandal.
+=======
+K666 is a free and open source forum platform.
+>>>>>>> origin/master
 
 If you want to contribute to this project contact the contributors.
