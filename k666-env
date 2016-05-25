@@ -19,8 +19,15 @@ if ! [ -e k666 ]; then
     django-admin startproject k666 .
 fi
 
+# DONT LET THIS INTO PRODUCTION!!!
+# ASSUMING DEV ENVIRONMENT... ITS VERY WRONG
+# IS OKAY IF USING SQLITE3... BUT WE DON'T KNOW!
 if ! [ -e db.sqlite3 ]; then
-    ./manage.py syncdb
+    ## 3. Create the database tables/migrations
+    ./manage.py migrate
+
+    ## 4. Create the Super User or Admin account with a user name and password.
+    $ ./manage.py createsuperuser
 fi
 
 ./manage.py runserver "$@"
