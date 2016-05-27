@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-# K666: Free Speech As In Open Source
-=======
 # K666: Free Speech as in Open Source.
->>>>>>> origin/master
 
 procrasti@k5-stats.org
 
@@ -11,7 +7,9 @@ orionblastar@gmail.com
 
 If you want to help or join contact Procrasti or Orion first.
 
-# Instructions
+Instructions
+
+After cloning into your directory run
 
 ## 1. Clone Source Repository
 $ git clone https://github.org/orionblastar/K666
